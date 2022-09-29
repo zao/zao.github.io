@@ -1,1 +1,1 @@
-[Projects and contributions](//stuff/)
+[Projects and contributions](/stuff/)
