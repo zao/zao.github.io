@@ -1,0 +1,83 @@
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>zao's stuff</title>
+  <style>
+    .tool_group {
+      margin: 1ex;
+      padding: 1ex;
+      border: 1px solid grey;
+      border-radius: 1ex;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Path of Exile-related projects</h1>
+  <div class="tool_group" id="bun">
+    <h2>Bun</h2>
+    <div>File extraction tool and library capable of listing and extracting files from Steam and Standalone data files.
+    </div>
+    <div><a href="https://github.com/zao/ooz/">Source repository (intermingled with third party ooz for historical
+        reasons)</a></div>
+    <div><a href="https://zao.se/~zao/poe/bun-x64-Release-g462332b.zip">Win64 binaries (2021-04-16, g462332b)</a></div>
+  </div>
+  <div class="tool_group" id="cubbyhole">
+    <h2>Cubbyhole</h2>
+    <div>Prototype of a free-standing editor for hideout decoration layouts with interactive preview and the possibility
+      of a richer editing experience.</div>
+    <div><a href="https://gitlab.com/zao/poe-cpp/-/tree/scene/apps/cubbyhole">Source repository</a></div>
+    <div><a href="cubbyhole/">Details</a></div>
+  </div>
+  <div class="tool_group" id="squint">
+    <h2>Squint &amp; matgen-py</h2>
+    <div>Asset viewer and material compiler.</div>
+    <div>Implements an approximation of the Path of Exile render pipeline, collects and compiles materials into shader code and metadata for use in the engine.</div>
+  </div>
+  <div class="tool_group" id="inya">
+    <h2>Inya</h2>
+    <div>Automated data ingestion and networked delivery system providing bundles and extracted files from arbitrary game versions for use in personal exploratory tools.</div>
+    <!--<div><a href="inya/">Architecture</a></div>-->
+  </div>
+  <div class="tool_group" id="pob">
+    <h2>Path of Building experiments</h2>
+    <ul>
+    <li><div>
+      <div>ANGLE-based renderer for the SimpleGraphic backend with cross-OS (Windows, Linux, macOS) portable runtime.</div>
+      <div><a href="https://github.com/zao/PathOfBuilding-SimpleGraphic/releases/tag/angle-2022-08-23">Win32 binaries (2022-08-23)</a></div>
+      <div><a href="https://github.com/zao/PathOfBuilding-SimpleGraphic/tree/angle-2022-08-23">Source tree</a></div>
+    </div>
+    </li>
+    <li><div>Internationalisation prototype exploring Unicode input and text rendering with font rasterisation.</div></li>
+  </div>
+  <div class="tool_group">
+    <h2>Wiki support tools</h2>
+    <div class="tool_group" id="process_image">
+      <h3>process-image</h3>
+      <div>Tool to decompress and crop DDS files to PNG, suitable for the block compression schemes used in Path of
+        Exile sprite sheets and textures.</div>
+      <div>Used with PyPoE to prepare assets for the official wiki, fixing the historical reliance on ImageMagick which
+        doesn't support BC7-encoded DDS files.</div>
+      <div><a href="https://github.com/zao/poe-utils/">Source repository</a></div>
+      <div><a href="https://github.com/zao/poe-utils/releases">Binary releases</a></div>
+    </div>
+    <div class="tool_group" id="pydds">
+      <h3>pydds</h3>
+      <div>Python extension to decompress and crop DDS files to PIL images.</div>
+      <div>This is <a href="#process_image">process_image</a> adapted into an extension to make installation easier and asset processing less disk-intensive, building PIL images rather than writing PNG files to disk.</div>
+      <div><a href="https://github.com/zao/pydds/">Source repository</a></div>
+      <div><a href="https://pypi.org/project/pydds/">PyPI: pydds</a></div>
+    </div>
+    <div class="tool_group" id="pyooz">
+      <h3>pyooz</h3>
+      <div>Python extension to assist with block decompression of Path of Exile bundle files.</div>
+      <div>Intended to be used in tools like PyPoE to make a self-contained installation with fewer external tool
+        dependencies.</div>
+      <div><a href="https://github.com/zao/pyooz/">Source repository</a></div>
+      <div><a href="https://pypi.org/project/pyooz/">PyPI: pyooz</a></div>
+    </div>
+  </div>
+</body>
+
+</html>
