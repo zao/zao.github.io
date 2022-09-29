@@ -5,10 +5,16 @@
   <title>zao's stuff</title>
   <style>
     .tool_group {
-      margin: 1ex;
-      padding: 1ex;
+      margin: 0.5rem;
+      padding: 0.5rem;
       border: 1px solid grey;
-      border-radius: 1ex;
+      border-radius: 0.5rem;
+    }
+    .thumb {
+      border: 1px solid grey;
+      margin: 0.5rem;
+      width: 20rem;
+      filter: drop-shadow(.5rem .5rem .5rem);
     }
   </style>
 </head>
@@ -27,17 +33,28 @@
     <h2>Cubbyhole</h2>
     <div>Prototype of a free-standing editor for hideout decoration layouts with interactive preview and the possibility
       of a richer editing experience.</div>
-    <div><a href="https://gitlab.com/zao/poe-cpp/-/tree/scene/apps/cubbyhole">Source repository</a></div>
-    <div><a href="cubbyhole/">Details</a></div>
+    <a href="https://i.imgur.com/HuQ4kcZ.png" target="_blank"><img class="thumb" src="https://i.imgur.com/HuQ4kcZ.png"/></a>
+    <a href="https://i.imgur.com/PQNp9m5.png" target="_blank"><img class="thumb" src="https://i.imgur.com/PQNp9m5.png"/></a>
+    <a href="https://i.imgur.com/ZCgo66R.png" target="_blank"><img class="thumb" src="https://i.imgur.com/ZCgo66R.png"/></a>
+    <div><a href="https://gitlab.com/zao/poe-cpp/-/tree/scene/apps/cubbyhole">Source repository (private)</a></div>
+    <!--<div><a href="cubbyhole/">Details</a></div>-->
   </div>
   <div class="tool_group" id="squint">
     <h2>Squint &amp; matgen-py</h2>
     <div>Asset viewer and material compiler.</div>
     <div>Implements an approximation of the Path of Exile render pipeline, collects and compiles materials into shader code and metadata for use in the engine.</div>
+    <a href="https://i.imgur.com/jOSrwEU.png" target="_blank"><img class="thumb" src="https://i.imgur.com/jOSrwEU.png"/></a>
+    <a href="https://i.imgur.com/3UuATsH.png" target="_blank"><img class="thumb" src="https://i.imgur.com/3UuATsH.png"/></a>
+    <a href="https://i.imgur.com/0i5jY8T.png" target="_blank"><img class="thumb" src="https://i.imgur.com/0i5jY8T.png"/></a>
+    <video width="640" controls>
+      <source src="https://i.imgur.com/cPODOVs.mp4" type="video/mp4">
+    </video>
+    <div><a href="https://gitlab.com/zao/poe-cpp/-/tree/scene/apps/squint">Source repository (private)</a></div>
   </div>
   <div class="tool_group" id="inya">
     <h2>Inya</h2>
     <div>Automated data ingestion and networked delivery system providing bundles and extracted files from arbitrary game versions for use in personal exploratory tools.</div>
+    <div>Deduplicates game data and provides JSON files mapping from game versions to releases and their loose and bundled datasets.</div>
     <!--<div><a href="inya/">Architecture</a></div>-->
   </div>
   <div class="tool_group" id="pob">
