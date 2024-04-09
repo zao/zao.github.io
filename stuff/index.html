@@ -29,6 +29,17 @@
         reasons)</a></div>
     <div><a href="https://zao.se/~zao/poe/bun-x64-Release-g462332b.zip">Win64 binaries (2021-04-16, g462332b)</a></div>
   </div>
+  <div class="tool_group" id="pob">
+    <h2>Path of Building runtime evolution</h2>
+    <ul>
+    <li><div>
+      <div>ANGLE-based renderer for the SimpleGraphic backend with cross-OS (Windows, Linux, macOS) portable runtime.</div>
+      <div>Launched to the public alongside of Path of Exile 3.24 in March 2024, greatly improving render performance and laying the groundwork for further improvements.</div>
+      <div><a href="https://github.com/zao/PathOfBuilding-SimpleGraphic">Source tree</a></div>
+    </div>
+    </li>
+    <li><div>Internationalisation prototype exploring Unicode input and text rendering with font rasterisation.</div></li>
+  </div>
   <div class="tool_group" id="cubbyhole">
     <h2>Cubbyhole</h2>
     <div>Prototype of a free-standing editor for hideout decoration layouts with interactive preview and the possibility
@@ -57,25 +68,17 @@
     <div>Deduplicates game data and provides JSON files mapping from game versions to releases and their loose and bundled datasets.</div>
     <!--<div><a href="inya/">Architecture</a></div>-->
   </div>
-  <div class="tool_group" id="pob">
-    <h2>Path of Building experiments</h2>
-    <ul>
-    <li><div>
-      <div>ANGLE-based renderer for the SimpleGraphic backend with cross-OS (Windows, Linux, macOS) portable runtime.</div>
-      <div><a href="https://github.com/zao/PathOfBuilding-SimpleGraphic/releases/tag/angle-2022-08-23">Win32 binaries (2022-08-23)</a></div>
-      <div><a href="https://github.com/zao/PathOfBuilding-SimpleGraphic/tree/angle-2022-08-23">Source tree</a></div>
-    </div>
-    </li>
-    <li><div>Internationalisation prototype exploring Unicode input and text rendering with font rasterisation.</div></li>
-  </div>
-  <div class="tool_group">
+  <div class="tool_group" id="wiki">
     <h2>Wiki support tools</h2>
+    <div class="tool_group" id=pypoe">
+      <h3>PyPoE improvements</h3>
+      <div>Researched and implemented game-accurate rendering of transfigured skill gem and map item icons for the PoE Wiki and the wider community.</div>
+    </div>
     <div class="tool_group" id="process_image">
       <h3>process-image</h3>
       <div>Tool to decompress and crop DDS files to PNG, suitable for the block compression schemes used in Path of
         Exile sprite sheets and textures.</div>
-      <div>Used with PyPoE to prepare assets for the official wiki, fixing the historical reliance on ImageMagick which
-        doesn't support BC7-encoded DDS files.</div>
+      <div>Used with PyPoE to prepare assets for the official wiki, fixing the historical reliance on ImageMagick which doesn't support BC7-encoded DDS files.</div>
       <div><a href="https://github.com/zao/poe-utils/">Source repository</a></div>
       <div><a href="https://github.com/zao/poe-utils/releases">Binary releases</a></div>
     </div>
@@ -89,8 +92,7 @@
     <div class="tool_group" id="pyooz">
       <h3>pyooz</h3>
       <div>Python extension to assist with block decompression of Path of Exile bundle files.</div>
-      <div>Intended to be used in tools like PyPoE to make a self-contained installation with fewer external tool
-        dependencies.</div>
+      <div>Intended to be used in tools like PyPoE to make a self-contained installation with fewer external tool dependencies.</div>
       <div><a href="https://github.com/zao/pyooz/">Source repository</a></div>
       <div><a href="https://pypi.org/project/pyooz/">PyPI: pyooz</a></div>
     </div>
